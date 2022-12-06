@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void) {
+	int t,n,x,y,z,count,i,j,a,b,c;
+	scanf("%d",&t);
+	while(t--)
+	{
+	  scanf("%d %d",&x,&y);
+	  if(x%10==0)
+      i=x/10;
+    else
+       i=(x/10)+1;
+    if(y%10==0)
+      j=y/10;
+    else
+       j=(y/10)+1;
+    if(i>=j)
+      printf("%d\n",i-j);
+    else
+       printf("%d\n",j-i);
+	}
+	return 0;
+}
+
